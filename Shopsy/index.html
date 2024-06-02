@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/contentImg/logoo.png" alt="logo" width="100px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#" class="signup-btn">Signup</a></li>
+                <div class="icon-cart">
+                    <i class="fa fa-heart" style="font-size:24px"></i>
+                    <i class="fa fa-shopping-cart" style="font-size:24px" onclick="toggleCart()"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="images/contentImg/denim.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Denim Jeans</h1>
+                <p class="price">$500</p>
+                <p>Denim is the Best</p>
+                <button class="btn" id="addToCartBtn1"
+                    onclick="addToCart('Denim Jeans', 500, 'images/contentImg/denim.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="images/contentImg/denim1.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Denim Jeans</h1>
+                <p class="price">$550</p>
+                <p>Denim is the Best</p>
+                <button class="btn" id="addToCartBtn2"
+                    onclick="addToCart('Denim Jeans', 500, 'images/contentImg/denim1.jpg')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="images/contentImg/denim 3.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Denim Jeans</h1>
+                <p class="price">$600</p>
+                <p>Denim is the Best</p>
+                <button class="btn" id="addToCartBtn3"
+                    onclick="addToCart('Denim Jeans', 600, 'images/contentImg/denim3.jpg')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listcart"></div>
+        <div class="btn">
+            <button class="close" onclick="toggleCart()">Close</button>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
